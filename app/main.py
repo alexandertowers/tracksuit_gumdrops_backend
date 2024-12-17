@@ -20,7 +20,7 @@ class LLMRequest(BaseModel):
 # Allow CORS so the frontend (running on a different port) can talk to this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # The port your frontend runs on
+    allow_origins=["https://tracksuit-gumdrops-front.onrender.com", "http://localhost:5173"],  # The port your frontend runs on
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
