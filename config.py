@@ -1,4 +1,4 @@
-from pydantic import BaseSettings, validator
+from pydantic_settings import BaseSettings, validator
 
 class Settings(BaseSettings):
     openai_api_key: str
