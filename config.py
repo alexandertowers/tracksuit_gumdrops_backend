@@ -1,14 +1,7 @@
-from pydantic_settings import BaseSettings, validator
+from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     openai_api_key: str
-    
-    @classmethod
-    @validator("openai_api_key")
-    def validate_api_key(cls, v):
-        if not v:
-            raise ValueError("API key is required")
-        return v
     
     class Config:
         env_file = ".env"
