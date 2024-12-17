@@ -4,7 +4,7 @@ certifi==2024.8.30
 charset-normalizer==3.4.0
 click==8.1.7
 colorama==0.4.6
-dotenv
+dotenv==1.0.1
 exceptiongroup==1.2.2
 fastapi==0.115.6
 h11==0.14.0
@@ -33,4 +33,4 @@ urllib3==2.2.3
 uvicorn==0.32.1
 watchfiles==1.0.3
 websockets==14.1
-openai
+openai==1.57.4
